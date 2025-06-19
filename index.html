@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Calculator</title>
+</head>
+<body style="background-image: url('./calculatorBackground.jpg'); background-repeat: no-repeat;  background-size: cover;">
+    <div class="container">
+        <div class="container-boundary">
+            <div class="screen">
+                <input  id="quantity"  max="15" readonly>
+            </div>>
+            <div class="operation-1">
+                <div id="root" class="op-1  operation" onclick="root()">√</div>
+                <div id="pi" class="op-1  operation" onclick="pi(22)">π</div>
+                <div id="power" class="op-1  operation">^</div>
+                <div id="factorial" class="op-1  operation">!</div>
+            </div>
+            <div class="operation-2">
+                <div id="AC" class="op-2  operation" onclick="empty()">AC</div>
+                <div id="brackets" class="op-2  operation" onclick="display('')">()</div>
+                <div id="percentage" class="op-2  operation" onclick="display('%')">%</div>
+                <div id="division" class="op-2  operation" onclick="display('/')">÷</div>
+            </div>
+            <div class="operation-3">
+                <div id="seven" class="op-3  operation" onclick="display('7')">7</div>
+                <div id="eight" class="op-3  operation" onclick="display('8')">8</div>
+                <div id="nine" class="op-3  operation" onclick="display('9')">9</div>
+                <div id="multiplication" class="op-3  operation" onclick="display('*')">*</div>
+            </div>
+            <div class="operation-4">
+                <div id="four"  class="op-4  operation" onclick="display('4')">4</div>
+                <div id="five" class="op-4  operation" onclick="display('5')">5</div>
+                <div id="six" class="op-4  operation" onclick="display('6')">6</div>
+                <div id="substraction" class="op-4  operation" onclick="display('-')">-</div>
+            </div>
+             <div class="operation-5">
+                <div id="one" class="op-5  operation" onclick="display('1')">1</div>
+                <div id="two" class="op-5  operation" onclick="display('2')">2</div>
+                <div id="three" class="op-5  operation" onclick="display('3')">3</div>
+                <div id="addition" class="op-5  operation" onclick="display('+')">+</div>
+            </div>
+            <div class="operation-6">
+                <div id="zero" class="op-5  operation" onclick="display('0')">0</div>
+                <div id="decimal" class="op-5  operation" onclick="display('.')">.</div>
+                <div id="delete" class="op-5  operation" onclick="del('x')">x</div>
+                <div id="equal" class="op-5  operation" onclick="equals()">=</div>
+            </div>
+            
+        </div>
+    </div>
+<script src="./index.js" charset="utf-8"></script>
+</body>
+</html>

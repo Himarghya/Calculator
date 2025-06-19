@@ -1,0 +1,103 @@
+/*Css code*/
+.container{
+   height: 95vh;
+   width:65vh;
+   background-color: #362b32;
+   margin-left: 35%;
+   margin-top: 20px;
+   border-radius: 30px;
+   box-shadow: 5px 5px 20px grey;
+   padding: 8px;
+}
+.container-boundary{
+    height:94vh;
+    width:64vh;
+    background-color: #303537;
+    border-radius: 35px;
+    border: 1px solid white;
+    padding: 5px;
+}
+.screen{
+    height:28vh;
+    width :100%;
+    background-color: #191e28;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.line{
+    height:60px;
+    width: 2px;
+    background-color: aliceblue;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    animation-name: line;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+#quantity{
+    width:100%;
+    margin:20px;
+    height:100px;
+    font-size: 3rem;
+
+}
+@keyframes line{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+.operation-1, .operation-2, .operation-3, .operation-4, .operation-5, .operation-6{
+    display: flex;
+    justify-content: center;
+}
+.op-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 80px;
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    filter: drop-shadow(10px 10px 10px );
+    cursor: pointer;
+}
+.op-2, .op-3, .op-4, .op-5, .op-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 80px;
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:10px;
+    filter: drop-shadow(10px 10px 10px );
+    cursor: pointer;
+}
+#AC{
+    background-color: palevioletred;
+    opacity: 0.7;
+}
+#brackets, #percentage, #division, #multiplication, #substraction, #addition{
+    background-color: lightslategray;
+}
+#equal{
+    background-color: lightskyblue;
+}
+/*  Css code that is going to be used for JS*/
+.pressed{
+    opacity: 0.5;
+    box-shadow: 0 0 2rem white;
+    scale: 0.7;
+}
